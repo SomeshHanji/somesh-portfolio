@@ -14,12 +14,7 @@ WORKDIR /app
 
 COPY --from=build /app/target/*.jar app.jar
 
-EXPOSE 8001
-
-ENV DB_HOST=localhost
-ENV DB_PORT=3306
-ENV DB_NAME=portfolio_db
-ENV DB_USER=root
-ENV DB_PASSWORD=
+# Render provides PORT automatically
+EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
