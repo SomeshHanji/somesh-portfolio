@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './App.css';
 import axios from 'axios';
 
-const API_URL = "http://localhost:8001";
+const API_URL = "https://somesh-portfolio-2.onrender.com";
 
 // Social Links
 const SOCIAL_LINKS = {
